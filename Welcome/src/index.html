@@ -5,18 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome Page</title>
-    <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Supermercado+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="flex flex-col items-center justify-center">
-    <h1 class="text-3xl font-paul">Welcome</h1>
-    <div class="h-[30rem]">
-      <img src="cute.gif" alt="" class="h-full" />
+  <body class="">
+    <div class="relative w-full">
+      <!-- blob on the left side -->
+      <div
+        class="absolute top-1/2 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <div
+        class="absolute w-96 h-96 rounded-full top-1/2 left-44 bg-cyan-200 mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <div
+        class="absolute top-52 left-20 w-96 h-96 bg-rose-200 rounded-full mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <!-- end of blob on the left side -->
+
+      <!-- blob on the right side -->
+      <div
+        class="absolute top-1/2 right-0 w-96 h-96 bg-green-200 rounded-full mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <div
+        class="absolute w-96 h-96 rounded-full top-1/2 right-44 bg-red-200 mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <div
+        class="absolute top-52 right-20 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply blur-2xl opacity-50 animate-blob"
+      ></div>
+      <!-- end of blob on the right side -->
+    </div>
+
+    <div class="flex flex-col items-center justify-center opacity-6">
+      <h1
+        class="capitalize text-[60px] font-paul text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600"
+      >
+        connecting to server...
+      </h1>
+      <div class="h-[30rem]">
+        <img src="cute.gif" alt="" class="h-full" />
+      </div>
+      <div>
+        <h2 class="font-roboto font-bold text-[40px]">
+          Please wait as we connect to the fastest server
+        </h2>
+      </div>
+      <div>
+        <button
+          class="capitalize border shadow-md shadow-amber-700 p-3 bg-gradient-to-tr from-amber-300 to-amber-500"
+        >
+          redirect to homepage
+        </button>
+      </div>
     </div>
   </body>
 </html>
